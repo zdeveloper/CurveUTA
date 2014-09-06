@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurveUTA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tiny_text">We are 100% not responsible! please don\'t sue us</string>
+    <string name="title_activity_department_list">DepartmentListActivity</string>
+
+</resources>
