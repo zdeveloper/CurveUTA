@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -23,8 +26,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DepartmentListActivity"
-            android:label="@string/title_activity_department_list" >
+            android:name=".DepartmentActivity"
+            android:label="@string/title_activity_department" >
+        </activity>
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/title_activity_course" >
         </activity>
     </application>
 
