@@ -6,8 +6,11 @@
     <string name="action_settings">Settings</string>
     <string name="tiny_text">We are 100% not responsible! please don\'t sue us</string>
     <string name="title_activity_department">DepartmentActivity</string>
-    <string name="appid">PULL YOUR APP ID NAME</string><-- FIX THIS
-    <string name="key">PUT YOUR KEY HERE</string><-- FIX THIS
+    <string name="appid">Rmf5DEgJz8wMYS7wQlpFmHZlL4gMrZUV6GBos7qt</string>
+    <string name="key">I4T2aP6fvkttrRo00Kwnicwc4D8Kre5FwJpNPsdE</string>
     <string name="title_activity_course">CourseActivity</string>
+    <string name="title_activity_prof">ProfActivity</string>
+    <color name="black">#0066FF</color>
+    
 
 </resources>

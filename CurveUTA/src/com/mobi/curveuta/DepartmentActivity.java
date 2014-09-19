@@ -8,14 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
 public class DepartmentActivity extends Activity {
 
-	ListView list;
+	private ListView list;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,20 +28,15 @@ public class DepartmentActivity extends Activity {
 		list.setAdapter(adapter2);
 		
 		list.setOnItemClickListener(new OnItemClickListener() {
-
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View parent, int position,
-					long arg3) {
-				Toast.makeText(getApplicationContext(), "You clicked on # " + position, Toast.LENGTH_SHORT).show();
+			public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+				//Toast.makeText(getApplicationContext(), "You clicked on # " + position, Toast.LENGTH_SHORT).show();
 				
 				String courseSelected = adapter2.getItem(position).get("name").toString();
 				
 				Intent i = new Intent(DepartmentActivity.this , CourseActivity.class);
 				i.putExtra("courseSelected", courseSelected);
-				
 				startActivity(i);
-				
-				
 			}
 		});
 		

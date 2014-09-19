@@ -22,8 +22,8 @@ public class SplashActivity extends Activity {
 					Intent i = new Intent(SplashActivity.this, DepartmentActivity.class);
 					sleep(3000);
 			        startActivity(i);
+			        finish();
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}			
 			}
