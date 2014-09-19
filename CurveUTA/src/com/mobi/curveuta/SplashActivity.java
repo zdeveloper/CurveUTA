@@ -12,7 +12,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Parse.initialize(this, getResources().getString(R.string.appid), getResources().getString(R.string.key));
+        Parse.initialize(this, YOUR_PARSE_APP_ID, YOUR_PARSE_CLIENT_KEY);
         
         setContentView(R.layout.activity_splash);
         
