@@ -9,7 +9,7 @@
     tools:context="com.mobi.curveuta.SplashActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/courseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -20,7 +20,7 @@
         android:textSize="10sp" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView_class_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

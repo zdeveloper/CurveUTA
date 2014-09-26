@@ -37,6 +37,10 @@
             android:name=".ProfActivity"
             android:label="@string/title_activity_prof" >
         </activity>
+        <activity
+            android:name=".CourseInfoActivity"
+            android:label="@string/title_activity_course_info" >
+        </activity>
     </application>
 
 </manifest>

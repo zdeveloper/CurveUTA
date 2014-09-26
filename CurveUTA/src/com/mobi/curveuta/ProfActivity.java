@@ -9,9 +9,13 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -33,7 +37,6 @@ public class ProfActivity extends Activity {
 		
 		courseName = getIntent().getStringExtra("className");
 		depName = getIntent().getStringExtra("departmentName");
-		
 		
 
 		ParseQuery<ParseObject> query = ParseQuery.getQuery("Classes");
@@ -62,6 +65,17 @@ public class ProfActivity extends Activity {
 				
 			}
 		});
-		
+
+		list.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+				Intent i = new Intent(ProfActivity.this, CourseInfoActivity.class);
+				i.putExtra("professorName", profList.get(position));
+				i.putExtra("depName", depName);
+				i.putExtra("courseName", courseName);	
+				startActivity(i);
+			}
+		});
 	}
 }
